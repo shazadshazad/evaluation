@@ -4,11 +4,16 @@
 
 body {
     margin: 0 auto;
+    font-family: Helvetica, sans-serif;
 }
 
 /* Header section */
 
 header {
+    background-color: #f9f9f9;
+}
+
+header .container-header {
     width: 1200px;
     height: 220px;
     margin: auto;
@@ -23,61 +28,61 @@ header {
     background-color: #f9f9f9;
 }
 
-header div.logo {
+header .container-header .logo {
     margin: 1rem;
     margin-top: 4rem;
 }
 
-header div.logo p {
+header .container-header div.logo p {
     font-size: 1.5rem;
 }
 
-header div.logo span {
+header .container-header div.logo span {
     color: orange;
     font-size: 1.5rem;
 }
 
-header .account-nav-section {
+header .container-header .account-nav-section {
     margin-top: 1rem;
     position: relative;
     width: 550px;
 }
 
-header .account-nav-section .account-basket {
+header .container-header .account-nav-section .account-basket {
     display: flex;
     border: solid 1px black;
     padding: 10px 2rem;
-    background-color: lightgrey;
+    background-color: #e5e5e5;
     width: 550px;
 }
 
-header .account-nav-section .account-basket .account {
+header .container-header .account-nav-section .account-basket .account {
     display: flex;
     /* align-items:  */
     width: 50%;
 }
 
-header .account-nav-section .account-basket .account p {
+header .container-header .account-nav-section .account-basket .account p {
     margin-left: 10px;
 }
 
-header .account-nav-section .account-basket .basket {
+header .container-header .account-nav-section .account-basket .basket {
     display: flex;
     width: 50%;
 }
 
-header .account-nav-section .account-basket .basket p {
+header .container-header .account-nav-section .account-basket .basket p {
     margin-left: 10px;
 }
 
-header .account-nav-section p.hello-user {
+header .container-header .account-nav-section p.hello-user {
     text-align: right;
     padding-right: 10px;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-header .account-nav-section ul {
+header .container-header .account-nav-section ul {
     list-style-type: none;
     display: flex;
     width: 440px;
@@ -90,7 +95,7 @@ header .account-nav-section ul {
     margin-bottom: 0;
 }
 
-header .account-nav-section li {
+header .container-header .account-nav-section li {
     border-left: solid 1px lightgrey;
     height: 3rem;
     display: flex;
@@ -98,7 +103,7 @@ header .account-nav-section li {
     padding: 0 1.5rem;
 }
 
-header .account-nav-section li:last-child {
+header .container-header .account-nav-section li:last-child {
     border-right: solid 1px lightgrey;
 }
 
@@ -117,9 +122,14 @@ main .container-main {
     /* margin-top: 25px; */
     padding-bottom: 5rem;
 }
-main .container-main img {
+
+main .container-main .image-container {
+    padding-top: 2rem;
+    background-color: #1c1c1c;
+}
+main .container-main .image-container img {
     width: 1200px;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     background-color: #1c1c1c;
     box-shadow: 0 8px 6px -6px black;
 }
@@ -201,7 +211,8 @@ main .container-main .article-list .article .discount {
     top: 10px;
     right: -25px;
     display: flex;
-    background-color: black;
+    background-color: #383838;
+    border: 5px solid black;
     width: 100px;
     height: 50px;
     color: orange;
@@ -267,7 +278,8 @@ footer .footer-container .copyrigth {
 footer nav {
     position: absolute;
     top: -27px;
-    left: 610px;
+    left: 50%;
+    transform: translate(-50%, 0%);
     width: 700px;
     background-color: whitesmoke;
     height: 60px;
@@ -276,6 +288,18 @@ footer nav {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+    /* box-shadow: 60px -16px red; */
+}
+
+footer nav::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.9);
+    z-index: 100;
 }
 
 footer nav ul {
@@ -303,5 +327,36 @@ footer .line {
     height: 20px;
     width: 100%;
     background-color: #373737;
-    box-shadow: 0 8px 6px -6px black;
+}
+
+@media screen and (max-width: 1200px) {
+    header .container-header {
+        width: 100%;
+    }
+
+    main .container-main {
+        width: 100%;
+    }
+
+    main .container-main .image-container img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header .container-header {
+        width: 100%;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        padding: 0;
+    }
+
+    main .container-main {
+        width: 100%;
+    }
+
+    main .container-main .image-container img {
+        width: 100%;
+    }
 }
