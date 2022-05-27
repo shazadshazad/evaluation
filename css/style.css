@@ -85,7 +85,7 @@ header .container-header .account-nav-section p.hello-user {
 header .container-header .account-nav-section ul {
     list-style-type: none;
     display: flex;
-    width: 440px;
+    width: 470px;
     justify-content: space-between;
     padding-right: 2rem;
     padding-left: 0;
