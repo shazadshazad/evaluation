@@ -347,9 +347,13 @@ footer .line {
     header .container-header {
         width: 100%;
         flex-direction: column;
-        height: 400px;
+        height: 450px;
         align-items: center;
         padding: 0;
+    }
+
+    header .container-header .account-nav-section {
+        height: 200px;
     }
 
     main .container-main {
