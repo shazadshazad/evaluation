@@ -6,8 +6,9 @@ body {
     margin: 0 auto;
     font-family: Helvetica, sans-serif;
 }
-
+/* ************** */
 /* Header section */
+/* ************** */
 
 header {
     background-color: #f9f9f9;
@@ -17,7 +18,6 @@ header .container-header {
     width: 1200px;
     height: 220px;
     margin: auto;
-    /* border: solid 1px black; */
     display: flex;
     justify-content: space-between;
     padding: 0 0 0 3rem;
@@ -58,7 +58,6 @@ header .container-header .account-nav-section .account-basket {
 
 header .container-header .account-nav-section .account-basket .account {
     display: flex;
-    /* align-items:  */
     width: 50%;
 }
 
@@ -106,10 +105,13 @@ header .container-header .account-nav-section li {
 header .container-header .account-nav-section li:last-child {
     border-right: solid 1px lightgrey;
 }
-
+/* ****************** */
 /* Header section end */
+/* ****************** */
 
+/* ****************** */
 /* Main section start */
+/* ****************** */
 
 main {
     background-color: #1c1c1c;
@@ -119,7 +121,6 @@ main .container-main {
     width: 1200px;
     margin: auto;
     background-color: white;
-    /* margin-top: 25px; */
     padding-bottom: 5rem;
 }
 
@@ -129,7 +130,6 @@ main .container-main .image-container {
 }
 main .container-main .image-container img {
     width: 1200px;
-    /* padding-top: 1.5rem; */
     background-color: #1c1c1c;
     box-shadow: 0 8px 6px -6px black;
 }
@@ -143,7 +143,6 @@ main .container-main .article-list {
 }
 
 main .container-main .article-list .article {
-    /* padding: 25px; */
     width: 401px;
     position: relative;
     margin-bottom: 4rem;
@@ -156,7 +155,6 @@ main .container-main .article-list .article .image {
 
 main .container-main .article-list .article .image img {
     width: 400px;
-    /* height: 400px; */
     box-shadow: 0 0 5px 2px black;
 }
 
@@ -202,7 +200,6 @@ main .container-main .article-list .article .button-price p .old-price {
 main .container-main .article-list .article .button-price p .new-price {
     font-size: 2.7rem;
     color: orange;
-    /* padding-left: 10px; */
     width: 50%;
 }
 
@@ -224,7 +221,13 @@ main .container-main .article-list .article .discount {
     margin: 0;
 }
 
+/* **************** */
+/* Main section end */
+/* **************** */
+
+/* ******************** */
 /* Footer section start */
+/* ******************** */
 
 footer {
     background-color: #373737;
@@ -328,6 +331,14 @@ footer .line {
     width: 100%;
     background-color: #373737;
 }
+
+/* ****************** */
+/* Footer section end */
+/* ****************** */
+
+/* ****************** */
+/* Responsive */
+/* ****************** */
 
 @media screen and (max-width: 1200px) {
     header .container-header {
